@@ -10,12 +10,13 @@
   margin: 0 auto;
   text-align: center;
   padding: 4rem 1rem;
-  border: 1px solid red;
 }
 
 :root {
   --primary: #494444;
   --deep-red: rgb(179, 0, 0);
+  --white: white;
+  --bg-color: #e7e9eb;
 }
 
 .header {
@@ -24,23 +25,53 @@
 }
 
 .card {
-  border: 1px solid gray;
+  background: var(--white);
   width: 90%;
   height: 400px;
   margin: 0 auto;
   padding: 2rem;
+  box-shadow: 0 0 5px var(--primary);
+  border-radius: 10px;
 }
 
 .card .card-header {
   text-align: start;
   color: var(--primary);
-  margin-bottom: 2rem;
+}
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
+  height: 2px;
+  margin-top: 2rem;
 }
 
 .display-pw-place {
-  border: 1px dashed black;
-  height: 40%;
+  height: 50%;
   padding: 10px;
+}
+
+#password {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px 15px 80px 15px;
+  border: none;
+  border-radius: 6px;
+  border: 1px dashed black;
+  overflow: hidden;
+  resize: none;
+  font-size: 1.2rem;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
+  height: 2px;
 }
 
 .generate-bt {
@@ -51,4 +82,19 @@
   border: none;
   background-color: var(--deep-red);
   border-radius: 20px;
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media (max-width: 780px) {
+  .generate-bt {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .generate-bt {
+    font-size: 1rem;
+  }
 }

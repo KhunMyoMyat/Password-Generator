@@ -2,7 +2,7 @@
 
 New things to remember for me
 
-             (js)
+             ##(js)
 
 - displayPW.value = generatedPW;
 - parseInt(prompt("Enter password length (between 8 and 128):"));
@@ -11,10 +11,10 @@ New things to remember for me
 - generatedPW += availableChar.charAt(randomIndex);
 - generatedPw += availableChars[randomIndex]
 
-             (css)
+             ##(css)
 
 - [intextarea]-resize: none;
 
-             (html)
+             ##(html)
 
 - [intextarea]-readonly, placeholder="..",

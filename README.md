@@ -9,6 +9,7 @@ New things to remember for me
 - confirm("Include Uppercase letters?")
 - let randomIndex = Math.floor(Math.random() \* availableChar.length);
 - generatedPW += availableChar.charAt(randomIndex);
+- generatedPw += availableChars[randomIndex]
 
              css
 
